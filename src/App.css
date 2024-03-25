@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+.main{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainMenu{
+  background-color: black;
+  min-height: 0px;
+  width: 600px;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainBoard{
+  background-color: black;
+  min-height: 0px;
+  width: 700px;
+  height: 100vh;
+  border-right: 1px solid rgb(58, 58, 58);
+  border-left: 1px solid rgb(58, 58, 58);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainHints{
+  background-color: black;
+  min-height: 0px;
+  width: 700px;
+  height: 100vh;
+}
+.mainMenuRow{
+  color:white;
+  position: fixed;
+  height: 100vh;
+  width:20%;
+  left:15%;
   display: flex;
   flex-direction: column;
+}
+.logo{
+  width: 4vw;
+  height: 4vh;
+  margin-bottom:5%;
+  margin-top:2%;
+}
+.mainMenuItem{
+  margin-left:2%;
+  width: 68%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color:white;
+}
+.mainMenuButton{
+  color:white;
+  border: none;
+  height: 7vh;
+  width: 75%;
+  background-color: black;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 6%;
+}
+.mainMenuItemIcon{
+  width: 32px;
+  height: 32px;
+}
+.mainMenuItem:hover{
+  cursor: pointer;
+}
+.mainMenuButton:hover{
+  cursor: pointer;
+}
+.mainMenuCreatePostButton{
+  background-color: rgb(29, 155, 240);
+  border:none;
+  color: white;
+  border-radius: 40px;
+  font-weight: bold;
+  width: 60%;
+  height: 130%;
+  margin-top: 5%;
+  margin-left:2%;
+  font-size: 17px;
+}
+.mainBoardHeader{
+  width: 100%;
+  background-color: white;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+.mainBoardSettings{
+  text-align: center;
+  width: 10%;
+  background-color: black;
+}
+.mainBoardSettings:hover{
+  cursor: pointer;
+}
+.mainBoardSettingsIcon{
+  min-height: 100%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.mainBoardButton{
+  border: none;
+  background-color: black;
+  width: 47%;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+  font-size: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainBoardButton:hover{
+  background-color: rgb(39, 37, 37);
+}
+.mainBoardInput{
+  height: 12%;
+  border-bottom: 1px solid rgb(58, 58, 58);
+}
+.mainBoardInputAvatar{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 2%;
 }
